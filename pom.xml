@@ -11,7 +11,7 @@
     <groupId>com.mcll</groupId>
     <artifactId>cms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>cms</name>
     <description>cms</description>
     <properties>
