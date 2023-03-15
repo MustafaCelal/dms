@@ -9,10 +9,10 @@ import java.util.List;
 public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
 
 
-    private final BaseRepository repository;
+    private final BaseRepository baseRepository;
 
-    public BaseServiceImpl(BaseRepository repository) {
-        this.repository = repository;
+    public BaseServiceImpl(BaseRepository baseRepository) {
+        this.baseRepository = baseRepository;
     }
 
 
@@ -20,7 +20,7 @@ public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
     public T getById(long id) {
         //TODO: Exception'lar genericleştirilecek
         try {
-            return (T) repository.findById(id).orElseThrow(() -> new RuntimeException("Entity Not Found"));
+            return (T) baseRepository.findById(id).orElseThrow(() -> new RuntimeException("Entity Not Found"));
         } catch (Throwable e) {
             throw new RuntimeException(e);
         }
@@ -28,12 +28,12 @@ public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
 
     @Override
     public T create(T entity) {
-        return (T) repository.save(entity);
+        return (T) baseRepository.save(entity);
     }
 
     @Override
     public T update(long id, T entity) {
-        T existingEntity = (T) repository.findById(id).orElse(null);
+        T existingEntity = (T) baseRepository.findById(id).orElse(null);
         if (existingEntity != null) {
             Field[] fields = entity.getClass().getDeclaredFields();
             for (Field field : fields) {
@@ -48,7 +48,7 @@ public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
                     throw new RuntimeException(e);
                 }
             }
-            repository.save(existingEntity);
+            baseRepository.save(existingEntity);
         }
         return existingEntity;
 
@@ -56,12 +56,12 @@ public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
 
     @Override
     public void delete(long id) {
-        repository.deleteById(id);
+        baseRepository.deleteById(id);
     }
 
     @Override
     public List<T> getAll() {
-        return (List<T>) repository.findAll();
+        return (List<T>) baseRepository.findAll();
     }
 
 }
