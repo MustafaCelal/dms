@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class DealerServiceImpl extends BaseServiceImpl<Dealer> implements DealerService {
 
-    public DealerServiceImpl(DealerRepository repository) {
-        super(repository);
+    public DealerServiceImpl(DealerRepository dealerRepository) {
+        super(dealerRepository);
     }
 }
