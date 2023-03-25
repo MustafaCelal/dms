@@ -20,9 +20,9 @@ public class DeliveryController extends BaseController<Delivery> {
         this.deliveryService = deliveryService;
     }
 
-    @GetMapping("/dealer/{id}")
-    public List<Delivery> getAllByDealerId(@PathVariable Long id) {
-        return deliveryService.getAllByDealerId(id);
+    @GetMapping("/dealer/{dealerId}")
+    public List<Delivery> getAllByDealerId(@PathVariable Long dealerId) {
+        return deliveryService.getAllByDealerId(dealerId);
     }
 
 }
