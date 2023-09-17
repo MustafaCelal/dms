@@ -1,7 +1,7 @@
-package com.mcll.cms.web.rest;
+package com.mcll.cms.web;
 
-import com.mcll.cms.business.service.BaseService;
-import com.mcll.cms.data.entity.BaseEntity;
+import com.mcll.cms.service.BaseService;
+import com.mcll.cms.domain.BaseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

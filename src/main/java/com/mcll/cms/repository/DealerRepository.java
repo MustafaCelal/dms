@@ -1,6 +1,6 @@
-package com.mcll.cms.data.repository;
+package com.mcll.cms.repository;
 
-import com.mcll.cms.data.entity.Dealer;
+import com.mcll.cms.domain.Dealer;
 import org.springframework.stereotype.Repository;
 
 @Repository

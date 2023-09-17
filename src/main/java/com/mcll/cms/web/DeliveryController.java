@@ -1,7 +1,7 @@
-package com.mcll.cms.web.rest;
+package com.mcll.cms.web;
 
-import com.mcll.cms.business.service.DeliveryService;
-import com.mcll.cms.data.entity.Delivery;
+import com.mcll.cms.service.DeliveryService;
+import com.mcll.cms.domain.Delivery;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

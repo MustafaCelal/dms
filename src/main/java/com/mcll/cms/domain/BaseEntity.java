@@ -1,4 +1,4 @@
-package com.mcll.cms.data.entity;
+package com.mcll.cms.domain;
 
 import jakarta.persistence.*;
 

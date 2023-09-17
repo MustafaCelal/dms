@@ -1,6 +1,6 @@
-package com.mcll.cms.business.service;
+package com.mcll.cms.service;
 
-import com.mcll.cms.data.entity.Delivery;
+import com.mcll.cms.domain.Delivery;
 
 import java.util.List;
 

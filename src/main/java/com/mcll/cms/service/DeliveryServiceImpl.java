@@ -1,7 +1,7 @@
-package com.mcll.cms.business.service;
+package com.mcll.cms.service;
 
-import com.mcll.cms.data.entity.Delivery;
-import com.mcll.cms.data.repository.DeliveryRepository;
+import com.mcll.cms.domain.Delivery;
+import com.mcll.cms.repository.DeliveryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

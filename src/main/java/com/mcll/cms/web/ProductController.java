@@ -1,7 +1,7 @@
-package com.mcll.cms.web.rest;
+package com.mcll.cms.web;
 
-import com.mcll.cms.business.service.ProductService;
-import com.mcll.cms.data.entity.Product;
+import com.mcll.cms.service.ProductService;
+import com.mcll.cms.domain.Product;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

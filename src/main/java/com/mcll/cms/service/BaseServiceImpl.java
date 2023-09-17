@@ -1,7 +1,7 @@
-package com.mcll.cms.business.service;
+package com.mcll.cms.service;
 
-import com.mcll.cms.data.entity.BaseEntity;
-import com.mcll.cms.data.repository.BaseRepository;
+import com.mcll.cms.domain.BaseEntity;
+import com.mcll.cms.repository.BaseRepository;
 
 import java.lang.reflect.Field;
 import java.util.List;

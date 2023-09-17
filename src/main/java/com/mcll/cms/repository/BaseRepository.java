@@ -1,6 +1,6 @@
-package com.mcll.cms.data.repository;
+package com.mcll.cms.repository;
 
-import com.mcll.cms.data.entity.BaseEntity;
+import com.mcll.cms.domain.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

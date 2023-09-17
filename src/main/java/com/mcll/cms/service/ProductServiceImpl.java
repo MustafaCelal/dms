@@ -1,7 +1,7 @@
-package com.mcll.cms.business.service;
+package com.mcll.cms.service;
 
-import com.mcll.cms.data.entity.Product;
-import com.mcll.cms.data.repository.ProductRepository;
+import com.mcll.cms.domain.Product;
+import com.mcll.cms.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 @Service
