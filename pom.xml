@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mcll</groupId>
-    <artifactId>cms</artifactId>
+    <artifactId>dms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cms</name>
-    <description>cms</description>
+    <name>dms</name>
+    <description>dms</description>
     <properties>
         <java.version>17</java.version>
     </properties>
