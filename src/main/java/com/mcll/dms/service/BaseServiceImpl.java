@@ -6,7 +6,7 @@ import com.mcll.dms.repository.BaseRepository;
 import java.lang.reflect.Field;
 import java.util.List;
 
-public class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
+public abstract class BaseServiceImpl<T extends BaseEntity> implements BaseService<T> {
 
 
     private final BaseRepository baseRepository;

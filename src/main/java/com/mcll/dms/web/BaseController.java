@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-public class BaseController<T extends BaseEntity> {
+public abstract class BaseController<T extends BaseEntity> {
 
     private final BaseService baseService;
 
